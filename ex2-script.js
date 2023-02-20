@@ -2,14 +2,14 @@ window.addEventListener("load", start);
 
 function start() {
   document
-    .querySelector("#orange_container")
-    .addEventListener("click", clickOrange);
+    .querySelector("#blue_container")
+    .addEventListener("click", clickBlue);
 }
 
-function clickOrange() {
-  console.log("Jump works");
+function clickBlue() {
+  console.log("Fallover works");
   document
-    .querySelector("#orange_container")
-    .removeEventListener("click", clickOrange);
-  document.querySelector("#orange_container").classList.add("jump");
+    .querySelector("#blue_container")
+    .removeEventListener("click", clickBlue);
+  document.querySelector("#blue_container").classList.add("fallover");
 }
