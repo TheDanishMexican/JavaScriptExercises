@@ -1,15 +1,10 @@
-window.addEventListener("load", start);
+"use strict";
 
-function start() {
-  document
-    .querySelector("#orange_container")
-    .addEventListener("click", clickOrange);
-}
+//below is a greeting function with 2 parameters
 
-function clickOrange() {
-  console.log("Jump works");
-  document
-    .querySelector("#orange_container")
-    .removeEventListener("click", clickOrange);
-  document.querySelector("#orange_container").classList.add("jump");
-}
+// function displayGreeting(greeting, firstName) {
+//   let greetPerson = `${greeting}, ${firstName}`;
+//   document.querySelector("h4").textContent = greetPerson;
+// }
+
+// displayGreeting("Hello", "idiot");
